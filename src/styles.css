@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: #ebbfbf;
+  color: #ffffff;
+  font-family: "Courgette", cursive;
+}
+
+.nav--logo {
+  height: 80%;
+  padding-left: 1.5%;
+  margin-right: 6px;
+}
+
+.nav--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.nav--credit {
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding-right: 1.5%;
+}
+
+header {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+}
+
+.header--title {
+  padding-top: 35px;
+  color: #1d1d1f;
+  font-size: 51px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.28px;
+}
+
+.header--detail {
+  color: #1d1d1f;
+  font-size: 20px;
+  line-height: 31px;
+  letter-spacing: 0.112px;
+}
+
+.header--stack {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.header--stack li {
+  border: 1px solid violet;
+  border-radius: 8px;
+  width: 12%;
+}
+
+.header--scroll {
+  font-size: 50px;
+  padding-top: 5%;
+}
+
+.header--learn {
+  display: flex;
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 4px;
+  padding-top: 5%;
+}
+
+.card--container {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  left: 8px;
+  margin-right: 450px;
+  margin-bottom: 130px;
+  display: inline-block;
+  flex-direction: row;
+  transition: 200ms;
+}
+
+.card--container:active {
+  width: 180px;
+  height: 245px;
+}
+
+#card {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transition: 700ms;
+}
+
+.card--img {
+  border-radius: 20px;
+}
+
+.card--over {
+  position: absolute;
+  width: 590px;
+  height: 254px;
+  top: 80%;
+  left: 165%;
+  padding-top: 50px;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card--container:hover .card--over {
+  opacity: 1;
+}
+
+.card--stack {
+  list-style: none;
+  border: 1px solid #f55a5a;
+  background-color: #ece2e2;
+  color: #1d1d1f;
+  border-radius: 8px;
+  width: 20%;
+  height: 10%;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.card--btn {
+  width: 15%;
+  height: 20%;
+  border-radius: 12px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
